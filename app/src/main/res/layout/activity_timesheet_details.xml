@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <include
+            android:id="@+id/common_header"
+            layout="@layout/common_header" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress_bar"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_date"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    style="@style/FormLabels"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date"
+                    android:textColor="@color/colorPrimary" />
+                <EditText
+                    android:id="@+id/et_choose_date"
+                    style="@style/FormSpinners"
+                    android:text="@string/please_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_straight_border"
+                    android:singleLine="true"
+                    android:focusable="false"
+                    android:editable="false"
+                    android:drawableRight="@drawable/ic_date"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_property"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FormLabels"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/property"
+                    android:textColor="@color/colorPrimary" />
+                <EditText
+                    android:id="@+id/et_select_property"
+                    style="@style/FormSpinners"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/please_select"
+                    android:background="@drawable/edittext_straight_border"
+                    android:singleLine="true"
+                    android:focusable="false"
+                    android:editable="false"
+                    android:drawableRight="@drawable/ic_dropdown"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_user"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FormLabels"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_user"
+                    android:textColor="@color/colorPrimary" />
+                <EditText
+                    android:id="@+id/et_select_user"
+                    style="@style/FormSpinners"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/please_select"
+                    android:background="@drawable/edittext_straight_border"
+                    android:singleLine="true"
+                    android:focusable="false"
+                    android:editable="false"
+                    android:drawableRight="@drawable/ic_dropdown"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/p10"
+                >
+
+                <TextView
+                    style="@style/FormLabels"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/property"
+                    android:visibility="gone"
+                    android:textColor="@color/colorPrimary" />
+
+                <Button
+                    android:id="@+id/btn_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/FormSpinners"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/show"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    />
+            </LinearLayout>
+            <ScrollView
+                android:id="@+id/layout"
+                android:layout_height="match_parent"
+                android:scrollbars="horizontal|vertical"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/p30"
+                android:layout_marginLeft="@dimen/p15"
+                android:layout_marginRight="@dimen/p15"
+                android:scrollbarStyle="outsideInset"
+                android:fillViewport="true">
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalView"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="horizontal|vertical"
+                    android:layout_width="wrap_content"
+                    >
+
+                    <TableLayout
+                        android:id="@+id/tbl_time_logs"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:stretchColumns="*">
+                    </TableLayout>
+                </HorizontalScrollView>
+            </ScrollView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/p15"
+        app:fabSize="normal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_share"
+        />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/p15"
+        app:fabSize="normal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_download"
+        />
+    <TextView
+        android:id="@+id/tv_total_logs"
+        android:text="Total : 10hrs 10minutes"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginBottom="2dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
+

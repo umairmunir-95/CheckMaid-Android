@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="pinViewStyle">@style/PinWidget.PinView</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="FormLabels">
+        <item name="android:padding">@dimen/p5</item>
+        <item name="android:textSize">@dimen/ts16</item>
+        <item name="android:layout_marginRight">@dimen/p15</item>
+        <item name="android:layout_marginLeft">@dimen/p15</item>
+    </style>
+
+    <style name="FormSpinners">
+        <item name="android:layout_marginLeft">@dimen/p20</item>
+        <item name="android:layout_marginRight">@dimen/p20</item>
+        <item name="android:drawablePadding">@dimen/p10</item>
+        <item name="android:padding">@dimen/p5</item>
+        <item name="android:textSize">@dimen/ts16</item>
+    </style>
+
+    <style name="FormEditText">
+        <item name="android:layout_marginLeft">@dimen/p10</item>
+        <item name="android:layout_marginRight">@dimen/p10</item>
+        <item name="android:padding">@dimen/p10</item>
+        <item name="android:textSize">@dimen/ts18</item>
+    </style>
+
+</resources>

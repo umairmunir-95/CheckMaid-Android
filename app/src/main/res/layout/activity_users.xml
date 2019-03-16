@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_below="@id/common_header"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <include
+        android:id="@+id/common_header"
+        layout="@layout/common_header" />
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_below="@id/common_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:id="@+id/select_user"
+        android:layout_below="@id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/p10"
+        >
+
+        <TextView
+            style="@style/FormLabels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_user"
+            android:textColor="@color/colorPrimary" />
+        <EditText
+            android:id="@+id/et_select_user"
+            style="@style/FormSpinners"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_straight_border"
+            android:singleLine="true"
+            android:hint="@string/please_select_user"
+            android:drawableRight="@drawable/ic_dropdown" />
+        <EditText
+            android:id="@+id/et_user_id"
+            style="@style/FormSpinners"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_straight_border"
+            android:singleLine="true"
+            android:hint="@string/please_select_user"
+            android:drawableRight="@drawable/ic_dropdown" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/users_list"
+        android:layout_below="@id/select_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/p50"
+        >
+
+        <TextView
+            style="@style/FormLabels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/list_of_properties"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/FormSpinners"
+            tools:listitem="@layout/rv_assign_properties_item"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="@string/save"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:textAllCaps="false" />
+</RelativeLayout>

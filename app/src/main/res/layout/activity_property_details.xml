@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/common_header"
+        layout="@layout/common_header" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_below="@id/common_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:layout_below="@id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:gravity="center"
+        >
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/p8"
+            android:layout_marginStart="@dimen/p8"
+            android:layout_marginTop="@dimen/p8"
+            android:background="@drawable/edittext_straight_border"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/p150"
+                android:orientation="horizontal"
+                android:padding="@dimen/p8">
+
+                <ImageView
+                    android:id="@+id/iv_picture"
+                    android:layout_width="@dimen/p150"
+                    android:layout_height="@dimen/p150"
+                    android:src="@drawable/logo"
+                    android:padding="@dimen/p10" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/p8">
+
+                    <TextView
+                        android:id="@+id/tv_property_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Property Name"
+                        android:textSize="@dimen/ts15"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_property_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:text="Property Address"
+                        android:textSize="@dimen/ts12" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/cv_checking_guide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/p8"
+            android:layout_marginStart="@dimen/p8"
+            android:layout_marginTop="@dimen/p8"
+            android:background="@drawable/edittext_straight_border"
+            >
+
+            <Button
+                android:id="@+id/btn_checking_guide"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/p100"
+                android:background="@color/colorPrimary"
+                android:text="@string/checkin_guide"
+                android:textColor="@color/white"
+                android:textAllCaps="false" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/cv_cleaning_guide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/p8"
+            android:layout_marginStart="@dimen/p8"
+            android:layout_marginTop="@dimen/p8"
+            android:background="@drawable/edittext_straight_border">
+
+            <Button
+                android:id="@+id/btn_cleaning_guide"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/p100"
+                android:background="@color/colorPrimary"
+                android:text="@string/cleaning_guide"
+                android:textColor="@color/white"
+                android:textAllCaps="false" />
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/p20"
+            android:src="@drawable/ic_map"
+            android:layout_gravity="center"
+            android:id="@+id/fab_map"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/ts12"
+        />
+
+
+</RelativeLayout>
+

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="@dimen/p200"
+        android:layout_height="@dimen/p200"
+        android:src="@drawable/white_logo"
+        android:padding="@dimen/p20"
+        android:layout_margin="@dimen/p20"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        />
+
+
+    <LinearLayout
+
+        android:id="@+id/ll_top"
+        android:layout_marginTop="@dimen/p30"
+        android:layout_below="@id/iv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/p20"
+            android:layout_marginRight="@dimen/p20"
+            android:background="@drawable/login_rounded_border"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="@dimen/p10"
+            android:hint="@string/email"
+            android:padding="@dimen/p5"
+            android:singleLine="true"
+            android:textSize="@dimen/ts16" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/p20"
+            android:layout_marginRight="@dimen/p20"
+            android:layout_marginTop="@dimen/p10"
+            android:background="@drawable/login_rounded_border"
+            android:drawableLeft="@drawable/ic_password"
+            android:drawablePadding="@dimen/p10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="@dimen/p5"
+            android:singleLine="true"
+            android:textSize="@dimen/ts16" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/p40"
+            android:layout_below="@id/et_password"
+            android:layout_marginLeft="@dimen/p20"
+            android:layout_marginRight="@dimen/p20"
+            android:layout_marginTop="@dimen/p10"
+            android:layout_marginBottom="@dimen/p10"
+            android:background="@drawable/rounded_border_button"
+            android:text="@string/login"
+            android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/tv_forgot_password"
+            android:text="@string/forgot_password"
+            android:gravity="center"
+            android:layout_marginBottom="2dp"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:indeterminateTint="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/tv_register"
+        android:text="@string/not_a_member"
+        android:gravity="center"
+        android:layout_marginBottom="2dp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

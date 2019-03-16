@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <include
+        android:id="@+id/common_header"
+        layout="@layout/common_header" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:layout_margin="@dimen/p10"
+            android:background="@drawable/edittext_straight_border">
+
+            <ImageView
+                android:id="@+id/iv_picture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/common_image"
+                android:scaleType="fitXY"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/p10"
+            android:background="@drawable/edittext_straight_border">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <EditText
+                        android:id="@+id/et_notes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                    <EditText
+                        android:id="@+id/et_notes2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                    <EditText
+                        android:id="@+id/et_notes3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <EditText
+                        android:id="@+id/et_notes4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <EditText
+                        android:id="@+id/et_notes5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                    <EditText
+                        android:id="@+id/et_notes6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                    <EditText
+                        android:id="@+id/et_notes7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                    <EditText
+                        android:id="@+id/et_notes8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                    <EditText
+                        android:id="@+id/et_notes9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_margin="@dimen/p10"
+            android:background="@drawable/edittext_straight_border">
+            <LinearLayout
+                android:id="@+id/view_flipper_root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/p10">
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:layout_margin="@dimen/p10"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:drawableEnd="@drawable/ic_next"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:layout_margin="@dimen/p10"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

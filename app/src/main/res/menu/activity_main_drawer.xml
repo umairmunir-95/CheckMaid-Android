@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/properties"
+            android:icon="@drawable/ic_properties"
+            android:title="@string/properties"/>
+
+        <item android:id="@+id/users"
+            android:icon="@drawable/ic_users"
+            android:title="@string/users" />
+
+        <item android:id="@+id/time_sheets"
+            android:icon="@drawable/ic_timesheets"
+            android:title="@string/timesheets" />
+
+        <item android:id="@+id/photo_logs"
+            android:icon="@drawable/ic_photologs"
+            android:title="@string/photologs"
+            />
+        <item android:id="@+id/damage_reports"
+            android:icon="@drawable/ic_damage_reports"
+            android:title="@string/damage_reports"
+            />
+
+        <item android:id="@+id/settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/settings"
+            />
+
+    </group>
+</menu>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/p8"
+    android:layout_marginStart="@dimen/p8"
+    android:layout_marginTop="@dimen/p8"
+    android:layout_marginBottom="@dimen/p8"
+    >
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    >
+
+    <TextView
+        android:id="@+id/tv_property_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Property Name"
+        android:padding="@dimen/p20"
+        android:textSize="@dimen/ts16"
+        android:layout_margin="@dimen/p10"
+        android:layout_weight="0.8"
+        />
+
+    <CheckBox
+        android:id="@+id/cb_assign_property"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:gravity="center|right"
+        android:padding="@dimen/p20"
+        android:layout_margin="@dimen/p10"
+        />
+</LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,79 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include
+        android:id="@+id/common_header"
+        layout="@layout/common_header" />
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_bar"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                style="@style/FormLabels"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/clock_clockout_message"
+                android:textColor="@color/colorPrimary" />
+            <EditText
+                android:id="@+id/et_select_property"
+                style="@style/FormSpinners"
+                android:hint="@string/select_property_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_straight_border"
+                android:singleLine="true"
+                android:drawableRight="@drawable/ic_dropdown"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/p10"
+            >
+
+            <TextView
+                style="@style/FormLabels"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/property"
+                android:visibility="gone"
+                android:textColor="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/btn_arrived"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/FormSpinners"
+                android:background="@color/colorPrimary"
+                android:text="@string/arrived"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

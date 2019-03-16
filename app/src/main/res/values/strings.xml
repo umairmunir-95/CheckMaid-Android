@@ -1,0 +1,176 @@
+<resources>
+    <string name="app_name">CheckMaids</string>
+    <string name="loading">Loading...</string>
+    <string name="login">Login</string>
+    <string name="user_id">UserID</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password_not_matched">Password not matched</string>
+    <string name="email_required">Email required.</string>
+    <string name="username_required">Username required.</string>
+    <string name="password_required">Password required.</string>
+    <string name="login_empty_credentials_message">Username or password required.</string>
+    <string name="login_success_message">Logged in successfully.</string>
+    <string name="properties">Properties</string>
+    <string name="users">Users</string>
+    <string name="timesheets">Time Sheets</string>
+    <string name="photologs">Photo Logs</string>
+    <string name="photo_logs">PhotoLogs</string>
+    <string name="damage_reports">Damage Reports</string>
+    <string name="settings">Settings</string>
+    <string name="delete_acconunt">Delete Account</string>
+    <string name="menu">Menu</string>
+    <string name="logout">Logout</string>
+    <string name="logout_confirmation">Are you sure you want to logout?</string>
+    <string name="delete_confirmation">Are you sure you want to delete your account? Your all account data would be deleted!!</string>
+
+    <string name="add_property">Add Property</string>
+    <string name="property_id">Property ID</string>
+    <string name="property_name">Property Name</string>
+    <string name="property_address">Property Address</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="check_in_time">CheckIn Time</string>
+    <string name="check_out_time">CheckOut Time</string>
+    <string name="select_time">Select Time </string>
+    <string name="submit">Submit</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="property_create_success">Property created successfully.</string>
+    <string name="checkin_guide">CheckIn Guide</string>
+    <string name="cleaning_guide">Cleaning Guide</string>
+    <string name="add_edit_title">AddEditTitle</string>
+    <string name="edit_property">Edit Property</string>
+    <string name="update">Update</string>
+    <string name="no_data_found">No data found.</string>
+    <string name="select_user">Select User</string>
+    <string name="search">Search</string>
+    <string name="list_of_properties">List of Properties</string>
+    <string name="save">Save</string>
+    <string name="list_of_users">List of Users</string>
+    <string name="property_assign_success">Properties assigned successfully.</string>
+    <string name="by_user">By User</string>
+    <string name="by_date">By Date</string>
+    <string name="by_property">By Property</string>
+    <string name="require_gps_proof_clock_in">Require GPS proof when Clocking-In</string>
+    <string name="require_gps_proof_clock_out">Require GPS proof when Clocking-Out</string>
+    <string name="require_photo_upload">Require photo upload when Clocking-Out</string>
+    <string name="require_photo__proof">Require photo proof for this step</string>
+    <string name="take_picture_before_proceed">Please take picture before proceed.</string>
+    <string name="damage_report_creation_success">Damage Report created successfully.</string>
+
+    <string name="share_via">Share Via</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="address">Address</string>
+    <string name="notes">Notes</string>
+    <string name="date">Date</string>
+    <string name="property">Select Property</string>
+    <string name="show">Show</string>
+    <string name="title">Title</string>
+    <string name="admin">admin</string>
+    <string name="user">user</string>
+    <string name="cleaner">cleaner</string>
+    <string name="from">From</string>
+    <string name="change_password">Change Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="user_registration">User Registration</string>
+    <string name="enter_email">Please enter your email address</string>
+    <string name="input_verification_code_message">We have sent a verification code at your email address. Please enter the code to continue.</string>
+    <string name="find_a_user">Find User</string>
+    <string name="find_a_property">Find Property</string>
+    <string name="cleaning_guides">Cleaning Guide</string>
+    <string name="clock_in_clock_out">ClockIn/ClockOut</string>
+    <string name="timesheet">TimeSheet</string>
+    <string name="property_search_message">Which property you would like to search?</string>
+    <string name="guide_search_message">Which guide you would like to search?</string>
+    <string name="clock_clockout_message">For which property you would like to clock-in?</string>
+    <string name="arrived">I have arrived</string>
+    <string name="clock_in_success">You have successfully clocked-in.</string>
+    <string name="damage_report_heading">Report Damaged or Stolen Item</string>
+    <string name="finished">I have finished</string>
+    <string name="clock_out_success">You have successfully clocked-out.</string>
+    <string name="forgot_password">Forgot Password?? Tap here to Reset...</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="not_a_member">Not a member?? Tap here to Register...</string>
+    <string name="get_info">Get Info</string>
+    <string name="verifying_email">Verifying Email</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="email_subject">CheckMaid User Registration Email</string>
+    <string name="email_message">Hi, Your verification code for CheckMaid registration is :</string>
+    <string name="email_message_cleaner">Hi, You have been registered as CheckMaids Cleaner.</string>
+    <string name="required">Required</string>
+    <string name="user_type">user_type</string>
+    <string name="logged_in_user_type">logged_user_type</string>
+
+    <string name="internet_available_msg">There is no internet connection on the device. Please check the connection and try again.</string>
+    <string name="internet_available_title">No Connection</string>
+    <string name="verification_code">verification_code</string>
+    <string name="verification_error">Invalid verification code.</string>
+    <string name="invalid_email">Please enter a valid email address to proceed.</string>
+    <string name="user_registration_message">Please enter username/email/password to proceed. One or more out of them is empty.</string>
+    <string name="incorrect_credentials">Incorrect username or password.</string>
+    <string name="clock_in_radius">ClockIn Radius</string>
+    <string name="add_user">Add User</string>
+
+    <string-array name="properties_array">
+        <item>Property 1</item>
+        <item>Property 2</item>
+        <item>Property 3</item>
+        <item>Property 4</item>
+        <item>Property 5</item>
+    </string-array>
+
+    <string-array name="clock_in_radius">
+        <item>50ft</item>
+        <item>100ft</item>
+        <item>150ft</item>
+        <item>200ft</item>
+        <item>250ft</item>
+    </string-array>
+
+    <string name="gotosettings">GOTO SETTINGS</string>
+    <string name="needpermission">Need Permissions</string>
+    <string name="permissionmessage">This app needs permission to use this feature. You can grant them in app settings.</string>
+    <string name="cancel">Cancel</string>
+    <string name="check_in_time_required">Checkin time required</string>
+    <string name="check_out_time_required">Checkout time required</string>
+    <string name="guide_id">Guide ID</string>
+    <string name="guide_type">Guide Type</string>
+    <string name="image">Image</string>
+    <string name="path">Path</string>
+    <string name="property_image">Property Image</string>
+    <string name="edit_image">Edit Image</string>
+    <string name="no_user_found">No user found.</string>
+    <string name="please_select_user">---Select User---</string>
+    <string name="assigned_properties">Assigned Properties</string>
+    <string name="please_select_user_first">Please select a user first.</string>
+    <string name="select_property">Please select atleast one property to proceed.</string>
+    <string name="no_property_assignment">No property assigned to this user.</string>
+    <string name="select_property_hint">---Select Property---</string>
+    <string name="checkin_guide_id">CheckIn ID</string>
+    <string name="cleaning_guide_id">Cleaning ID</string>
+    <string name="already_clock_in">Already clocked-in for this property???</string>
+    <string name="need_to_checkout">You cannot go back before checking out.</string>
+    <string name="all_properties">AllProperties</string>
+    <string name="edit_picture">Edit Picture</string>
+    <string name="please_select">---Please Select---</string>
+    <string name="message">Message</string>
+    <string name="enable">Enable</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="clock_in_radius_message">Workers can check-in to property if they are within a certain distance of property. Which radius you want to set? For apartments or condos, it is recommended to allow a bigger radius that contains the entire building.</string>
+    <string name="admin_cleaner_difference"> Signing up as an admin will allow you to manage your own properties and assign them to your employees. Do not use this feature if you are a cleaner.</string>
+    <string name="gps_not_enabled">GPS is not enabled. Please enable it to proceed.</string>
+    <string name="unable_to_locate">Unable to locate you at this moment. Please try again after sometime.</string>
+    <string name="clock_in_error">You can only clock-in on site. Please try again when you have arrived at property.</string>
+
+    <string name="forgot_password_request_subject">Password reset request</string>
+    <string name="forgot_password_request_body">If you requested a password reset, please add the below verification code in app. If you did not make this request, please ignore this email.</string>
+
+
+    <string name="google_maps_api_key">AIzaSyDp_ZobV1Zw_WT75JIB89s4nKxmDNYqGr4</string>
+
+
+</resources>

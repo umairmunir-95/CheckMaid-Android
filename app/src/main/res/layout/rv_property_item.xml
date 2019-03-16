@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/p8"
+    android:layout_marginStart="@dimen/p8"
+    android:layout_marginTop="@dimen/p8">
+
+    <LinearLayout
+        android:id="@+id/ll_single_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="@dimen/p8">
+
+        <ImageView
+            android:id="@+id/iv_picture"
+            android:layout_width="@dimen/p150"
+            android:layout_height="@dimen/p150"
+            android:src="@drawable/logo"
+            android:scaleType="fitXY"
+             />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/p8">
+
+            <TextView
+                android:id="@+id/tv_property_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:textSize="@dimen/ts12"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_property_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/ts15"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/tv_property_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:textSize="@dimen/ts12" />
+
+
+            <TextView
+                android:id="@+id/tv_latitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:textSize="@dimen/ts12"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_longitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:textSize="@dimen/ts12"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_checking_radius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:textSize="@dimen/ts12"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_clockin_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:textSize="@dimen/ts12"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_clockout_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:textSize="@dimen/ts12"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
